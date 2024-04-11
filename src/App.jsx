@@ -1,4 +1,4 @@
-import ResumeApp from "./components/ResumeApp";
+import ResumeApp from "./ResumeApp";
 
 function App() {
   return <ResumeApp />;
