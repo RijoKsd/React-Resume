@@ -2,6 +2,7 @@ import PersonalInfoSection from "../personal-info/PersonalInfoSection/PersonalIn
 
 import EducationInfoSection from "../Education/EducationInfoSection/EducationInfoSection"
 import './resume.css'
+import ExperienceInfoSection from "../Experience/ExperienceInfoSection/ExperienceInfoSection";
 
 const Resume = ({ personalInfo,sections }) => {
   return (
@@ -15,7 +16,7 @@ const Resume = ({ personalInfo,sections }) => {
         />
         <div>
           <EducationInfoSection educations={sections.educations} />
-          {/* <ExperienceInfoSection experiences={sections.experiences} /> */}
+          <ExperienceInfoSection experiences={sections.experiences} />
         </div>
       </div>
     </div>

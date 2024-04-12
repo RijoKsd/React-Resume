@@ -7,6 +7,7 @@ import AddEducationSection from "./pages/Education/AddEducationSection/AddEducat
 import Resume from "./pages/Resume/Resume";
 import TemplateLoader from "./pages/TemplateLoader/TemplateLoader";
 import exampleData from "./exampleData";
+import AddExperienceSection from "./pages/Experience/AddExperienceSection/AddExperienceSection";
 
 // uuid
 import { v4 as uuid } from "uuid";
@@ -51,6 +52,19 @@ function ResumeApp() {
       degree: "",
       schoolName: "",
       location: "",
+      startDate: "",
+      endDate: "",
+      isCollapsed: false,
+      isHidden: false,
+      id: uuid(),
+    });
+
+  const createExperienceForm = () =>
+    createForm("experiences", {
+      companyName: "",
+      positionTitle: "",
+      location: "",
+      description: "",
       startDate: "",
       endDate: "",
       isCollapsed: false,
@@ -150,6 +164,17 @@ function ResumeApp() {
               isOpen={sectionOpen === "Education"}
               onChange={handleSectionChange}
               createForm={createEducationForm}
+              setOpen={setOpen}
+              onCancel={cancelForm}
+              toggleCollapsed={toggleCollapsed}
+              onHide={toggleHidden}
+              onRemove={removeForm}
+            />
+            <AddExperienceSection
+              experiences={sections.experiences}
+              isOpen={sectionOpen === "Experience"}
+              onChange={handleSectionChange}
+              createForm={createExperienceForm}
               setOpen={setOpen}
               onCancel={cancelForm}
               toggleCollapsed={toggleCollapsed}
