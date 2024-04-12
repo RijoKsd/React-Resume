@@ -1,25 +1,32 @@
-.app{
+.app {
     display: flex;
-    margin:auto;;
-    width:100%;
-    padding:32px 34px;
-    gap:24px;
+    margin: auto;
+    ;
+    width: 100%;
+    padding: 32px 34px;
+    gap: 24px;
     max-width: 1500px;
- 
-}
-.form-container{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    flex-grow:999;
-    gap:28px
+
 }
 
-.edit-side{
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 999;
+    gap: 28px
+}
+
+.form {
+    padding: 18px;
+    border-radius: 12px;
+    background-color: yellow;
+}
+
+.edit-side {
     display: flex;
     height: fit-content;
     flex-wrap: wrap;
-    gap:24px;
+    gap: 24px;
     max-width: 750px;
-    flex-grow:1;
+    flex-grow: 1;
 }
