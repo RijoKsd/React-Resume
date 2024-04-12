@@ -15,3 +15,31 @@
     height: 100%;
     grid-template-rows: auto 1fr;
 }
+
+.resume-section {
+    padding: 0 56px;
+    margin-top: 40px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.resume h1,
+.resume h2,
+.resume h3 {
+    font-family: var(--resume-bold);
+    font-weight: bold;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 4px 0;
+    background-color: var(--section-resume-bg);
+    color: var(--resume-accent);
+}

@@ -15,7 +15,7 @@ const exampleData = {
         degree: "Bachelors in Computer Science",
         schoolName: "xyz university",
         location: "Kerala",
-        startDate: "present",
+        startDate: "08/2020-present",
         isCollapsed: true,
         isHidden: false,
         id: uuid(),

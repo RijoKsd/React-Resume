@@ -1,7 +1,9 @@
-import PersonalInfoSection from "../PersonalInfoSection/PersonalInfoSection";
+import PersonalInfoSection from "../personal-info/PersonalInfoSection/PersonalInfoSection";
+
+import EducationInfoSection from "../Education/EducationInfoSection/EducationInfoSection"
 import './resume.css'
 
-const Resume = ({ personalInfo }) => {
+const Resume = ({ personalInfo,sections }) => {
   return (
     <div className="resume-container">
       <div className="resume">
@@ -11,6 +13,10 @@ const Resume = ({ personalInfo }) => {
           phoneNumber={personalInfo.phoneNumber}
           address={personalInfo.address}
         />
+        <div>
+          <EducationInfoSection educations={sections.educations} />
+          {/* <ExperienceInfoSection experiences={sections.experiences} /> */}
+        </div>
       </div>
     </div>
   );

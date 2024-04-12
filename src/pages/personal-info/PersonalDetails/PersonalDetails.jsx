@@ -1,6 +1,6 @@
 import "./PersonalDetails.css";
 
-import InputGroup from "../InputGroup/InputGroup";
+import InputGroup from  '../../InputGroup/InputGroup'
 
 function PersonalDetails({ onChange, email, fullName, phoneNumber, address }) {
   return (
